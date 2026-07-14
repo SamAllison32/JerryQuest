@@ -31,3 +31,10 @@ jumpSpeed = 18;
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "jumping"
 jumping = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 42296DDC
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "onGround"
+onGround = false;

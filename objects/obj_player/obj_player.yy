@@ -25,7 +25,12 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":32.0,},
+    {"x":0.0,"y":32.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"moveX","filters":[],"listItems":[],"multiselect":false,"name":"moveX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
@@ -35,10 +40,10 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_NOTJERRYNOOOOOOOOOOO",
-    "path":"sprites/spr_NOTJERRYNOOOOOOOOOOO/spr_NOTJERRYNOOOOOOOOOOO.yy",
+    "name":"spr_testcol",
+    "path":"sprites/spr_testcol/spr_testcol.yy",
   },
   "spriteMaskId":null,
   "visible":true,
