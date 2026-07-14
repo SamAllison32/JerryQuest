@@ -7,8 +7,9 @@ moveX = 0;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 26A3A65E
+/// @DnDArgument : "expr" "10"
 /// @DnDArgument : "var" "moveY"
-moveY = 0;
+moveY = 10;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -20,9 +21,9 @@ walkSpeed = 10;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 65D200CF
-/// @DnDArgument : "expr" "10"
+/// @DnDArgument : "expr" "18"
 /// @DnDArgument : "var" "jumpSpeed"
-jumpSpeed = 10;
+jumpSpeed = 18;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
