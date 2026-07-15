@@ -1,6 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 05C29C74
+/// @DnDComment : Debug. To reset player position.
 /// @DnDArgument : "expr" "500"
 /// @DnDArgument : "var" "x"
 x = 500;

@@ -1,22 +1,18 @@
-/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-/// @DnDVersion : 1
-/// @DnDHash : 158832FA
-/// @DnDArgument : "msg" "moveY"
-show_debug_message(string(moveY));
-
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 376B4E3E
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "x + moveX"
 /// @DnDArgument : "var" "x"
-x = x + moveX;
+
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 7EF8A212
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "y + moveY"
 /// @DnDArgument : "var" "y"
-y = y + moveY;
+
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -43,6 +39,7 @@ moveX = moveX * walkSpeed;
 var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4EEBF81C
+	/// @DnDComment : This checks if the player is on the ground. Game breaks without this.
 	/// @DnDParent : 44568925
 	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "onGround"
@@ -51,6 +48,7 @@ var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3CB3780B
+	/// @DnDComment : This thecks if the player is jumping. Game breaks without this.
 	/// @DnDParent : 44568925
 	/// @DnDArgument : "expr" "false"
 	/// @DnDArgument : "var" "jumping"
@@ -66,11 +64,13 @@ var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
 	/// @DnDHash : 4BF8F859
+	/// @DnDComment : I just prefer the arrow keys :/
 	/// @DnDParent : 44568925
 	/// @DnDArgument : "key" "vk_up"
 	var l4BF8F859_0;l4BF8F859_0 = keyboard_check_pressed(vk_up);if (l4BF8F859_0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 229E9A75
+		/// @DnDComment : This makes it so that moveY isn't stuck at 0
 		/// @DnDParent : 4BF8F859
 		/// @DnDArgument : "expr" "false"
 		/// @DnDArgument : "var" "onGround"
@@ -87,6 +87,7 @@ var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 15BE3754
+		/// @DnDComment : This cancels gravity.
 		/// @DnDParent : 4BF8F859
 		/// @DnDArgument : "expr" "true"
 		/// @DnDArgument : "var" "jumping"
@@ -98,6 +99,7 @@ var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 
 else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 11163B66
+	/// @DnDComment : More effective than "if moveY = 10."
 	/// @DnDParent : 3A0D38C6
 	/// @DnDArgument : "var" "jumping"
 	/// @DnDArgument : "value" "true"
@@ -113,6 +115,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
 	/// @DnDHash : 21F9101F
+	/// @DnDComment : I have no idea what this is but it works ¯\_(ツ)_/¯
 	/// @DnDParent : 3A0D38C6
 	else{	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -126,6 +129,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1
 /// @DnDHash : 15582190
+/// @DnDComment : Likewise
 /// @DnDArgument : "xvel" "moveX"
 /// @DnDArgument : "yvel" "moveY"
 /// @DnDArgument : "object" "obj_floor"
@@ -135,6 +139,7 @@ move_and_collide(moveX, moveY, obj_floor,4,0,0,-1,-1);
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 69EFE51F
+/// @DnDComment : This is from the original tutorial. I may remove it later but it works for now.
 /// @DnDArgument : "var" "moveX"
 /// @DnDArgument : "not" "1"
 if(!(moveX == 0)){	/// @DnDAction : YoYo Games.Common.Variable

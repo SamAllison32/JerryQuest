@@ -21,9 +21,9 @@ walkSpeed = 10;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 65D200CF
-/// @DnDArgument : "expr" "18"
+/// @DnDArgument : "expr" "26"
 /// @DnDArgument : "var" "jumpSpeed"
-jumpSpeed = 18;
+jumpSpeed = 26;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
