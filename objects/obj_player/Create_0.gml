@@ -1,3 +1,11 @@
+/// @DnDAction : YoYo Games.Instances.Set_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 033C6EA2
+/// @DnDArgument : "spriteind" "spr_player_idle"
+/// @DnDSaveInfo : "spriteind" "spr_player_idle"
+sprite_index = spr_player_idle;
+image_index = 0;
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 31E829FE
@@ -38,3 +46,10 @@ jumping = false;
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "onGround"
 onGround = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1B261CA8
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "stompable"
+stompable = false;

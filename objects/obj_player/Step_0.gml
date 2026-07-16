@@ -1,21 +1,5 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 376B4E3E
-/// @DnDDisabled : 1
-/// @DnDArgument : "expr" "x + moveX"
-/// @DnDArgument : "var" "x"
-
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 7EF8A212
-/// @DnDDisabled : 1
-/// @DnDArgument : "expr" "y + moveY"
-/// @DnDArgument : "var" "y"
-
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 5361D8E6
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "moveX"
@@ -135,17 +119,3 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "object" "obj_floor"
 /// @DnDSaveInfo : "object" "obj_floor"
 move_and_collide(moveX, moveY, obj_floor,4,0,0,-1,-1);
-
-/// @DnDAction : YoYo Games.Common.If_Variable
-/// @DnDVersion : 1
-/// @DnDHash : 69EFE51F
-/// @DnDComment : This is from the original tutorial. I may remove it later but it works for now.
-/// @DnDArgument : "var" "moveX"
-/// @DnDArgument : "not" "1"
-if(!(moveX == 0)){	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 0D4AA35D
-	/// @DnDParent : 69EFE51F
-	/// @DnDArgument : "expr" "sign(moveX) * 4"
-	/// @DnDArgument : "var" "image_xscale"
-	image_xscale = sign(moveX) * 4;}
