@@ -1,6 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 5361D8E6
+/// @DnDComment : The Stuff (tm)
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "moveX"
 moveX = keyboard_check(vk_right) - keyboard_check(vk_left);
@@ -15,6 +16,7 @@ moveX = moveX * walkSpeed;
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 44568925
+/// @DnDComment : Squid on a box. What he do$(13_10)$(13_10)$(13_10)Jerry on a floor. What he do
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
@@ -128,6 +130,7 @@ move_and_collide(moveX, moveY, obj_floor,4,0,0,-1,-1);
 if(crownOut == false){	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 6E90F8FB
+	/// @DnDComment : These lines of code show or hide $(13_10)the little "deal" above the npc.
 	/// @DnDParent : 7A48A737
 	/// @DnDArgument : "x_relative" "1"
 	/// @DnDArgument : "y_relative" "1"
