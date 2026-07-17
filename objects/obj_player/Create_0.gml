@@ -52,3 +52,17 @@ stompable = false;
 /// @DnDArgument : "expr" "true"
 /// @DnDArgument : "var" "squish"
 squish = true;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 66C1930B
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "crownOut"
+crownOut = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 25C3A59D
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "jumpPower"
+jumpPower = false;

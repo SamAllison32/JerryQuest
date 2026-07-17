@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_coin",
+  "%Name":"obj_deathbox",
   "eventList":[],
   "managed":true,
-  "name":"obj_coin",
+  "name":"obj_deathbox",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_betacoin",
-    "path":"sprites/spr_betacoin/spr_betacoin.yy",
+    "name":"spr_NOTJERRYNOOOOOOOOOOO",
+    "path":"sprites/spr_NOTJERRYNOOOOOOOOOOO/spr_NOTJERRYNOOOOOOOOOOO.yy",
   },
   "spriteMaskId":null,
   "visible":true,

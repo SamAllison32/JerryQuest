@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_coin",
-  "eventList":[],
+  "%Name":"obj_crown",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_coin",
+  "name":"obj_crown",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_betacoin",
-    "path":"sprites/spr_betacoin/spr_betacoin.yy",
+    "name":"spr_crown",
+    "path":"sprites/spr_crown/spr_crown.yy",
   },
   "spriteMaskId":null,
   "visible":true,

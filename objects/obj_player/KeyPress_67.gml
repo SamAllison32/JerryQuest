@@ -9,9 +9,9 @@ x = 500;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 40452899
-/// @DnDArgument : "expr" "250"
+/// @DnDArgument : "expr" "600"
 /// @DnDArgument : "var" "y"
-y = 250;
+y = 600;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

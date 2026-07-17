@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_coin",
+  "%Name":"obj_youwin",
   "eventList":[],
   "managed":true,
-  "name":"obj_coin",
+  "name":"obj_youwin",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_betacoin",
-    "path":"sprites/spr_betacoin/spr_betacoin.yy",
+    "name":"spr_youwin",
+    "path":"sprites/spr_youwin/spr_youwin.yy",
   },
   "spriteMaskId":null,
   "visible":true,

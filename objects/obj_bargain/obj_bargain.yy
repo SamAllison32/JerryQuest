@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_coin",
-  "eventList":[],
+  "%Name":"obj_bargain",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_coin",
+  "name":"obj_bargain",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_betacoin",
-    "path":"sprites/spr_betacoin/spr_betacoin.yy",
+    "name":"spr_bargain",
+    "path":"sprites/spr_bargain/spr_bargain.yy",
   },
   "spriteMaskId":null,
   "visible":true,

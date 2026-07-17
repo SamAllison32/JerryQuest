@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_coin",
-  "eventList":[],
+  "%Name":"obj_coin_hider",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_coin",
+  "name":"obj_coin_hider",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
