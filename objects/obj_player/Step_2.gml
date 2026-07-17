@@ -110,6 +110,7 @@ var l4060F400_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l4060F400_0 > 
 		/// @DnDParent : 545D173A
 		/// @DnDArgument : "imageind_relative" "1"
 		/// @DnDArgument : "spriteind" "spr_player_moving"
+		/// @DnDSaveInfo : "spriteind" "spr_player_moving"
 		sprite_index = spr_player_moving;
 		image_index += 0;
 	
@@ -134,6 +135,7 @@ var l4060F400_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l4060F400_0 > 
 		/// @DnDParent : 2F27C7C8
 		/// @DnDArgument : "imageind_relative" "1"
 		/// @DnDArgument : "spriteind" "spr_player_moving"
+		/// @DnDSaveInfo : "spriteind" "spr_player_moving"
 		sprite_index = spr_player_moving;
 		image_index += 0;
 	
