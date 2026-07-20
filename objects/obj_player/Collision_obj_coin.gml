@@ -8,7 +8,7 @@ obj_game.coins += 1;
 
 /// @DnDAction : YoYo Games.Particles.Effect
 /// @DnDVersion : 1
-/// @DnDHash : 197BFF7E
+/// @DnDHash : 3D4D9A90
 /// @DnDApplyTo : other
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
