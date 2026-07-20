@@ -66,6 +66,8 @@
     {"id":{"name":"spr_player_squish","path":"sprites/spr_player_squish/spr_player_squish.yy",},},
     {"id":{"name":"spr_testcol","path":"sprites/spr_testcol/spr_testcol.yy",},},
     {"id":{"name":"spr_youwin","path":"sprites/spr_youwin/spr_youwin.yy",},},
+    {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},},
+    {"id":{"name":"Sprite20","path":"sprites/Sprite20/Sprite20.yy",},},
     {"id":{"name":"Sprite33","path":"sprites/Sprite33/Sprite33.yy",},},
     {"id":{"name":"testset","path":"sprites/testset/testset.yy",},},
     {"id":{"name":"tests","path":"tilesets/tests/tests.yy",},},
