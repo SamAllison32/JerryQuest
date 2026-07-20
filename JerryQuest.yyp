@@ -50,6 +50,8 @@
     {"id":{"name":"obj_youwin","path":"objects/obj_youwin/obj_youwin.yy",},},
     {"id":{"name":"rm_youwin","path":"rooms/rm_youwin/rm_youwin.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"max__1_","path":"sprites/max__1_/max__1_.yy",},},
+    {"id":{"name":"max","path":"sprites/max/max.yy",},},
     {"id":{"name":"spr_bargain","path":"sprites/spr_bargain/spr_bargain.yy",},},
     {"id":{"name":"spr_betacoin","path":"sprites/spr_betacoin/spr_betacoin.yy",},},
     {"id":{"name":"spr_crown","path":"sprites/spr_crown/spr_crown.yy",},},

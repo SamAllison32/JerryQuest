@@ -18,11 +18,11 @@ moveX = moveX * walkSpeed;
 /// @DnDHash : 44568925
 /// @DnDComment : Squid on a box. What he do$(13_10)$(13_10)$(13_10)Jerry on a floor. What he do
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "2"
+/// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "obj_floor"
 /// @DnDSaveInfo : "object" "obj_floor"
-var l44568925_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l44568925_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+var l44568925_0 = instance_place(x + 0, y + 1, [obj_floor]);if ((l44568925_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4EEBF81C
 	/// @DnDComment : This checks if the player is on the ground. Game breaks without this.
