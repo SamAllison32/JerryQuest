@@ -3,15 +3,17 @@
   "%Name":"tests",
   "autoTileSets":[],
   "macroPageTiles":{
-    "SerialiseHeight":10,
-    "SerialiseWidth":12,
+    "SerialiseHeight":21,
+    "SerialiseWidth":14,
     "TileCompressedData":[
-      -74,0,-4,1,-3,2,2,4,5,-4,0,-5,2,3,3,1,1,-4,0,-2,2,7,4,5,2,7,6,2,2,-3,0,1,2,-6,1,2,2,0,
+      -87,0,-3,4,6,14,15,4,10,11,4,-6,0,-5,4,3,14,15,4,-6,0,-8,4,-6,0,-2,4,2,2,3,-4,4,-6,0,-2,4,2,6,7,-4,4,
+      -6,0,-8,1,-4,0,-12,5,-31,0,-3,4,2,2,3,-3,4,-6,0,-3,4,2,6,7,-3,4,-6,0,-2,4,6,2,5,5,3,4,4,-6,0,2,4,2,-4,
+      5,2,3,4,-6,0,1,2,-6,5,1,3,-6,0,-8,1,-3,0,
     ],
     "TileDataFormat":1,
   },
   "name":"tests",
-  "out_columns":3,
+  "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -37,5 +39,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":8,
+  "tile_count":16,
 }

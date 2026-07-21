@@ -76,3 +76,10 @@ crownOut = false;
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "jumpPower"
 jumpPower = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 345F7CB2
+/// @DnDComment : tiles
+/// @DnDArgument : "var" "collisionTilemap"
+collisionTilemap = 0;
