@@ -84,3 +84,17 @@ jumpPower = false;
 /// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles_1")"
 /// @DnDArgument : "var" "collisionTilemap"
 collisionTilemap = layer_tilemap_get_id("Tiles_1");
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3AFC70F1
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "interaction"
+interaction = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 5C52E66A
+/// @DnDArgument : "value" "false"
+/// @DnDArgument : "var" "global.talk"
+global.talk = false;

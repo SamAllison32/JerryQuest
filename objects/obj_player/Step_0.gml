@@ -1,22 +1,29 @@
-/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 5361D8E6
-/// @DnDComment : The Stuff (tm)
-/// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
-/// @DnDArgument : "var" "moveX"
-moveX = keyboard_check(vk_right) - keyboard_check(vk_left);
+/// @DnDHash : 7CFA191A
+/// @DnDArgument : "var" "interaction"
+/// @DnDArgument : "value" "false"
+if(interaction == false){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 5361D8E6
+	/// @DnDComment : The Stuff (tm)
+	/// @DnDParent : 7CFA191A
+	/// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
+	/// @DnDArgument : "var" "moveX"
+	moveX = keyboard_check(vk_right) - keyboard_check(vk_left);
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 3D20382F
-/// @DnDArgument : "expr" "moveX * walkSpeed"
-/// @DnDArgument : "var" "moveX"
-moveX = moveX * walkSpeed;
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 3D20382F
+	/// @DnDParent : 7CFA191A
+	/// @DnDArgument : "expr" "moveX * walkSpeed"
+	/// @DnDArgument : "var" "moveX"
+	moveX = moveX * walkSpeed;}
 
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 44568925
-/// @DnDComment : Squid on a box. What he do$(13_10)$(13_10)$(13_10)Jerry on a floor. What he do
+/// @DnDComment : Squid on a box. What he do$(13_10)$(13_10)$(13_10)Jerry on a tile. What he do
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
@@ -46,37 +53,43 @@ var l44568925_0 = instance_place(x + 0, y + 1, [collisionTilemap]);if ((l445689
 	/// @DnDArgument : "var" "moveY"
 	moveY = 0;
 
-	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 4BF8F859
-	/// @DnDComment : I just prefer the arrow keys :/
+	/// @DnDHash : 7F6F8130
 	/// @DnDParent : 44568925
-	/// @DnDArgument : "key" "vk_up"
-	var l4BF8F859_0;l4BF8F859_0 = keyboard_check_pressed(vk_up);if (l4BF8F859_0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDArgument : "var" "interaction"
+	/// @DnDArgument : "value" "false"
+	if(interaction == false){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 		/// @DnDVersion : 1
-		/// @DnDHash : 229E9A75
-		/// @DnDComment : This makes it so that moveY isn't stuck at 0
-		/// @DnDParent : 4BF8F859
-		/// @DnDArgument : "expr" "false"
-		/// @DnDArgument : "var" "onGround"
-		onGround = false;
-	
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 488947FB
-		/// @DnDParent : 4BF8F859
-		/// @DnDArgument : "expr" "-jumpSpeed"
-		/// @DnDArgument : "var" "moveY"
-		moveY = -jumpSpeed;
-	
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 15BE3754
-		/// @DnDComment : This cancels gravity.
-		/// @DnDParent : 4BF8F859
-		/// @DnDArgument : "expr" "true"
-		/// @DnDArgument : "var" "jumping"
-		jumping = true;}}
+		/// @DnDHash : 4BF8F859
+		/// @DnDComment : I just prefer the arrow keys :/
+		/// @DnDParent : 7F6F8130
+		/// @DnDArgument : "key" "vk_up"
+		var l4BF8F859_0;l4BF8F859_0 = keyboard_check_pressed(vk_up);if (l4BF8F859_0){	/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 229E9A75
+			/// @DnDComment : This makes it so that moveY isn't stuck at 0
+			/// @DnDParent : 4BF8F859
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "onGround"
+			onGround = false;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 488947FB
+			/// @DnDParent : 4BF8F859
+			/// @DnDArgument : "expr" "-jumpSpeed"
+			/// @DnDArgument : "var" "moveY"
+			moveY = -jumpSpeed;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 15BE3754
+			/// @DnDComment : This cancels gravity.
+			/// @DnDParent : 4BF8F859
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "jumping"
+			jumping = true;}}}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
@@ -138,19 +151,47 @@ if(crownOut == false){	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	var l6E90F8FB_0 = instance_place(x + 0, y + 0, [obj_npc]);if ((l6E90F8FB_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 1C60FBB2
+		/// @DnDDisabled : 1
 		/// @DnDParent : 6E90F8FB
 		/// @DnDArgument : "expr" "false"
 		/// @DnDArgument : "var" "obj_bargain.hiding"
-		obj_bargain.hiding = false;}
+	
+	
+		/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+		/// @DnDVersion : 1
+		/// @DnDHash : 0E4135D7
+		/// @DnDParent : 6E90F8FB
+		/// @DnDArgument : "key" "ord("Z")"
+		var l0E4135D7_0;l0E4135D7_0 = keyboard_check_pressed(ord("Z"));if (l0E4135D7_0){	/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 180A7AB1
+			/// @DnDParent : 0E4135D7
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "interaction"
+			interaction = true;}}
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
 	/// @DnDHash : 787A7D1B
+	/// @DnDDisabled : 1
 	/// @DnDParent : 7A48A737
-	else{	/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 4B7C22C9
-		/// @DnDParent : 787A7D1B
-		/// @DnDArgument : "expr" "true"
-		/// @DnDArgument : "var" "obj_bargain.hiding"
-		obj_bargain.hiding = true;}}
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4B7C22C9
+	/// @DnDDisabled : 1
+	/// @DnDParent : 787A7D1B
+	/// @DnDArgument : "expr" "true"
+	/// @DnDArgument : "var" "obj_bargain.hiding"}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 49ECF73F
+/// @DnDArgument : "var" "interaction"
+/// @DnDArgument : "value" "true"
+if(interaction == true){	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 46D270AA
+	/// @DnDParent : 49ECF73F
+	/// @DnDArgument : "value" "true"
+	/// @DnDArgument : "var" "global.talk"
+	global.talk = true;}
