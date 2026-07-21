@@ -338,8 +338,8 @@ if(jumpPower == true){	/// @DnDAction : YoYo Games.Instances.Color_Sprite
 	/// @DnDHash : 5EBBDEB1
 	/// @DnDParent : 637D730E
 	/// @DnDArgument : "colour" "$FFFFFF00"
+	/// @DnDArgument : "alpha" "false"
 	image_blend = $FFFFFF00 & $ffffff;
-	image_alpha = ($FFFFFF00 >> 24) / $ff;
 
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
