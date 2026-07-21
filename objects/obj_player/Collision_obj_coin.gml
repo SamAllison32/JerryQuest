@@ -8,14 +8,15 @@ obj_game.coins += 1;
 
 /// @DnDAction : YoYo Games.Particles.Effect
 /// @DnDVersion : 1
-/// @DnDHash : 197BFF7E
+/// @DnDHash : 63D1CF69
 /// @DnDApplyTo : other
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "type" "4"
+/// @DnDArgument : "type" "1"
+/// @DnDArgument : "where" "1"
 /// @DnDArgument : "size" "1"
 /// @DnDArgument : "color" "$FF00FFFF"
-with(other) effect_create_below(4, x + 0, y + 0, 1, $FF00FFFF & $ffffff);
+with(other) effect_create_above(1, x + 0, y + 0, 1, $FF00FFFF & $ffffff);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

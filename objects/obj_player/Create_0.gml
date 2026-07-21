@@ -81,5 +81,6 @@ jumpPower = false;
 /// @DnDVersion : 1
 /// @DnDHash : 345F7CB2
 /// @DnDComment : tiles
+/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles_1")"
 /// @DnDArgument : "var" "collisionTilemap"
-collisionTilemap = 0;
+collisionTilemap = layer_tilemap_get_id("Tiles_1");

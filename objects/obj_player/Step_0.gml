@@ -20,9 +20,8 @@ moveX = moveX * walkSpeed;
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "object" "obj_floor"
-/// @DnDSaveInfo : "object" "obj_floor"
-var l44568925_0 = instance_place(x + 0, y + 1, [obj_floor]);if ((l44568925_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "object" "collisionTilemap"
+var l44568925_0 = instance_place(x + 0, y + 1, [collisionTilemap]);if ((l44568925_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4EEBF81C
 	/// @DnDComment : This checks if the player is on the ground. Game breaks without this.
@@ -120,7 +119,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "yvel" "moveY"
 /// @DnDArgument : "object" "obj_floor"
 /// @DnDSaveInfo : "object" "obj_floor"
-move_and_collide(moveX, moveY, obj_floor,4,0,0,-1,-1);
+move_and_collide(moveX, moveY, [obj_floor],4,0,0,-1,-1);
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
