@@ -50,6 +50,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},},
     {"id":{"name":"obj_youwin","path":"objects/obj_youwin/obj_youwin.yy",},},
+    {"id":{"name":"ps_coin","path":"particles/ps_coin/ps_coin.yy",},},
     {"id":{"name":"rm_youwin","path":"rooms/rm_youwin/rm_youwin.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"max__1_","path":"sprites/max__1_/max__1_.yy",},},

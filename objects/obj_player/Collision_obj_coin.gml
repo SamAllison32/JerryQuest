@@ -12,10 +12,10 @@ obj_game.coins += 1;
 /// @DnDApplyTo : other
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "type" "1"
+/// @DnDArgument : "type" "4"
 /// @DnDArgument : "size" "1"
 /// @DnDArgument : "color" "$FF00FFFF"
-with(other) effect_create_below(1, x + 0, y + 0, 1, $FF00FFFF & $ffffff);
+with(other) effect_create_below(4, x + 0, y + 0, 1, $FF00FFFF & $ffffff);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
