@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_spike",
+  "eventList":[],
   "managed":true,
-  "name":"obj_game",
+  "name":"obj_spike",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_spike",
+    "path":"sprites/spr_spike/spr_spike.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
