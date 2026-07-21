@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"testset",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ec6e7ab3-19cb-42f1-833f-b43e222d2078","name":"ec6e7ab3-19cb-42f1-833f-b43e222d2078","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ec6e7ab3-19cb-42f1-833f-b43e222d2078","name":"ec6e7ab3-19cb-42f1-833f-b43e222d2078","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":32,
   "gridY":32,
