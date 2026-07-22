@@ -98,3 +98,10 @@ interaction = false;
 /// @DnDArgument : "value" "false"
 /// @DnDArgument : "var" "global.talk"
 global.talk = false;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4653D024
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "backwalk"
+backwalk = false;

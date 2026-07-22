@@ -81,6 +81,7 @@
     {"id":{"name":"spr_scrooo","path":"sprites/spr_scrooo/spr_scrooo.yy",},},
     {"id":{"name":"spr_selector","path":"sprites/spr_selector/spr_selector.yy",},},
     {"id":{"name":"spr_speech_boy","path":"sprites/spr_speech_boy/spr_speech_boy.yy",},},
+    {"id":{"name":"spr_speech_real","path":"sprites/spr_speech_real/spr_speech_real.yy",},},
     {"id":{"name":"spr_speech","path":"sprites/spr_speech/spr_speech.yy",},},
     {"id":{"name":"spr_spike","path":"sprites/spr_spike/spr_spike.yy",},},
     {"id":{"name":"spr_testcol","path":"sprites/spr_testcol/spr_testcol.yy",},},

@@ -20,6 +20,28 @@ if(interaction == false){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "var" "moveX"
 	moveX = moveX * walkSpeed;}
 
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 39F798AD
+/// @DnDArgument : "var" "backwalk"
+/// @DnDArgument : "value" "true"
+if(backwalk == true){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 574B3864
+	/// @DnDComment : The Stuff (tm)
+	/// @DnDParent : 39F798AD
+	/// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
+	/// @DnDArgument : "var" "moveX"
+	moveX = keyboard_check(vk_right) - keyboard_check(vk_left);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 0AE5D04F
+	/// @DnDParent : 39F798AD
+	/// @DnDArgument : "expr" "moveX * walkSpeed"
+	/// @DnDArgument : "var" "moveX"
+	moveX = moveX * walkSpeed;}
+
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 44568925
@@ -87,6 +109,44 @@ var l44568925_0 = instance_place(x + 0, y + 1, [collisionTilemap]);if ((l445689
 			/// @DnDHash : 15BE3754
 			/// @DnDComment : This cancels gravity.
 			/// @DnDParent : 4BF8F859
+			/// @DnDArgument : "expr" "true"
+			/// @DnDArgument : "var" "jumping"
+			jumping = true;}}
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 454C01B8
+	/// @DnDParent : 44568925
+	/// @DnDArgument : "var" "backwalk"
+	/// @DnDArgument : "value" "true"
+	if(backwalk == true){	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+		/// @DnDVersion : 1
+		/// @DnDHash : 7C6A94AC
+		/// @DnDComment : I just prefer the arrow keys :/
+		/// @DnDParent : 454C01B8
+		/// @DnDArgument : "key" "vk_up"
+		var l7C6A94AC_0;l7C6A94AC_0 = keyboard_check_pressed(vk_up);if (l7C6A94AC_0){	/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 4E9BA67B
+			/// @DnDComment : This makes it so that moveY isn't stuck at 0
+			/// @DnDParent : 7C6A94AC
+			/// @DnDArgument : "expr" "false"
+			/// @DnDArgument : "var" "onGround"
+			onGround = false;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 49F89EAC
+			/// @DnDParent : 7C6A94AC
+			/// @DnDArgument : "expr" "-jumpSpeed"
+			/// @DnDArgument : "var" "moveY"
+			moveY = -jumpSpeed;
+		
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 05CDEDE5
+			/// @DnDComment : This cancels gravity.
+			/// @DnDParent : 7C6A94AC
 			/// @DnDArgument : "expr" "true"
 			/// @DnDArgument : "var" "jumping"
 			jumping = true;}}}
