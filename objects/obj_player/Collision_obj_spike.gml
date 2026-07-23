@@ -4,6 +4,14 @@
 /// @DnDArgument : "var" "obj_game.coins"
 obj_game.coins = 0;
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 629CFBDA
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_relative" "1"
+/// @DnDArgument : "var" "global.deathCount"
+global.deathCount += 1;
+
 /// @DnDAction : YoYo Games.Instances.Sprite_Image_Alpha
 /// @DnDVersion : 1
 /// @DnDHash : 134568BB

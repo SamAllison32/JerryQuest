@@ -66,3 +66,13 @@ draw_text_transformed(0, 60, string("MoveX: ") + string(obj_player.moveX), 4, 4,
 /// @DnDArgument : "caption" ""MoveY: ""
 /// @DnDArgument : "text" "obj_player.moveY"
 draw_text_transformed(0, 120, string("MoveY: ") + string(obj_player.moveY), 4, 4, 0);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+/// @DnDVersion : 1
+/// @DnDHash : 2C33C029
+/// @DnDArgument : "y" "180"
+/// @DnDArgument : "xscale" "4"
+/// @DnDArgument : "yscale" "4"
+/// @DnDArgument : "caption" ""Death Count: ""
+/// @DnDArgument : "text" "global.deathCount"
+draw_text_transformed(0, 180, string("Death Count: ") + string(global.deathCount), 4, 4, 0);

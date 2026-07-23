@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bargain",
-    "path":"sprites/spr_bargain/spr_bargain.yy",
+    "name":"spr_pressZ",
+    "path":"sprites/spr_pressZ/spr_pressZ.yy",
   },
   "spriteMaskId":null,
   "visible":true,
